@@ -1,0 +1,11 @@
+*.class
+bin/
+*~
+logs.zip
+*.log
+*.orig
+target/
+*.java._trace
+*.smap
+src-gen/
+xtend-gen/
