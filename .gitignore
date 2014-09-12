@@ -9,3 +9,7 @@ target/
 *.smap
 src-gen/
 xtend-gen/
+
+.project
+.classpath
+.settings
