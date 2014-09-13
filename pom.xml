@@ -51,6 +51,35 @@
           </execution>
         </executions>
       </plugin>
+
+	<plugin>
+		<groupId>org.eclipse.xtend</groupId>
+		<artifactId>xtend-maven-plugin</artifactId>
+		<version>2.6.0</version>
+		<executions>
+			<execution>
+				<phase>generate-sources</phase>
+				<goals>
+					<goal>compile</goal>
+				</goals>
+			</execution>
+		</executions>
+		<configuration>
+			<outputDirectory>${basedir}/xtend-gen</outputDirectory>
+		</configuration>
+	</plugin>
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-clean-plugin</artifactId>
+		<version>2.5</version>
+		<configuration>
+			<filesets>
+				<fileset>
+					<directory>${basedir}/xtend-gen</directory>
+				</fileset>
+			</filesets>
+		</configuration>
+	</plugin>
     </plugins>
   </build>
 
@@ -59,6 +88,11 @@
       <id>eclipse-luna</id>
       <layout>p2</layout>
       <url>http://download.eclipse.org/releases/luna</url>
+    </repository>
+    <repository>
+      <id>xtext</id>
+      <layout>p2</layout>
+      <url>http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases</url>
     </repository>
   </repositories>
 
