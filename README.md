@@ -1,4 +1,4 @@
-This example demonstrates how to collect code coverage by tests, which executed by [tycho-surefire-plugin](http://www.eclipse.org/tycho/) and the xtend-maven-plugin.
+This example is based on [https://github.com/SonarSource/sonar-examples/tree/master/projects/tycho](https://github.com/SonarSource/sonar-examples/tree/master/projects/tycho) and it uses also the xtend-maven-plugin.
 
 Prerequisites
 =============
