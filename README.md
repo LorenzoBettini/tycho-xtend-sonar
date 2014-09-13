@@ -1,4 +1,4 @@
-This example demonstrates how to collect code coverage by tests, which executed by [tycho-surefire-plugin](http://www.eclipse.org/tycho/).
+This example demonstrates how to collect code coverage by tests, which executed by [tycho-surefire-plugin](http://www.eclipse.org/tycho/) and the xtend-maven-plugin.
 
 Prerequisites
 =============
@@ -11,6 +11,7 @@ Execution
 
 1.  Build project and execute all tests:
 
+        export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=256m"
         mvn clean install
 
 2.  Analyze with SonarQube:
