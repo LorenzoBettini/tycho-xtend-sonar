@@ -1,24 +1,33 @@
 [INFO] Scanning for projects...
 [WARNING] No explicit target runtime environment configuration. Build is platform dependent.
 [WARNING] No explicit target runtime environment configuration. Build is platform dependent.
-[INFO] Computing target platform for MavenProject: org.example.tycho-example:plugin:1.0.0-SNAPSHOT @ /home/bettini/git/sonar-examples/projects/tycho/plugin/pom.xml
-[INFO] Fetching p2.index from http://download.eclipse.org/releases/indigo/ (0B at 0B/s)
-[INFO] Adding repository http://download.eclipse.org/releases/indigo
-[INFO] Fetching p2.index from http://download.eclipse.org/technology/epp/packages/indigo/ (0B at 0B/s)
-[INFO] Fetching p2.index from http://download.eclipse.org/releases/indigo/201202240900/ (0B at 0B/s)
-[INFO] Fetching p2.index from http://download.eclipse.org/releases/indigo/201109230900/ (0B at 0B/s)
-[INFO] Fetching p2.index from http://download.eclipse.org/releases/indigo/201106220900/ (0B at 0B/s)
-[INFO] Resolving dependencies of MavenProject: org.example.tycho-example:plugin:1.0.0-SNAPSHOT @ /home/bettini/git/sonar-examples/projects/tycho/plugin/pom.xml
-[INFO] Resolving class path of MavenProject: org.example.tycho-example:plugin:1.0.0-SNAPSHOT @ /home/bettini/git/sonar-examples/projects/tycho/plugin/pom.xml
-[INFO] Computing target platform for MavenProject: org.example.tycho-example:plugin.tests:1.0.0-SNAPSHOT @ /home/bettini/git/sonar-examples/projects/tycho/plugin.tests/pom.xml
-[INFO] Resolving dependencies of MavenProject: org.example.tycho-example:plugin.tests:1.0.0-SNAPSHOT @ /home/bettini/git/sonar-examples/projects/tycho/plugin.tests/pom.xml
-[INFO] Resolving class path of MavenProject: org.example.tycho-example:plugin.tests:1.0.0-SNAPSHOT @ /home/bettini/git/sonar-examples/projects/tycho/plugin.tests/pom.xml
+[INFO] Computing target platform for MavenProject: org.example.tycho-example:plugin:1.0.0-SNAPSHOT @ /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin/pom.xml
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/luna/ (0B at 0B/s)
+[INFO] Adding repository http://download.eclipse.org/releases/luna
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/luna/201409261001/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/luna/201406250900/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/ (0B at 0B/s)
+[INFO] Adding repository http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases
+[INFO] Fetching p2.index from http://download.eclipse.org/modeling/emf/emf/updates/releases/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/modeling/emf/emf/updates/2.8.x/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/modeling/emf/emf/updates/2.8.x/core/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/modeling/emf/emf/updates/2.8.x/xcore/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/modeling/emf/emf/updates/2.9/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/modeling/emft/mwe/updates/releases/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/modeling/tmf/xtext/updates/releases/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/modeling/tmf/xtext/updates/releases/xpand/ (0B at 0B/s)
+[INFO] Resolving dependencies of MavenProject: org.example.tycho-example:plugin:1.0.0-SNAPSHOT @ /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin/pom.xml
+[INFO] Resolving class path of MavenProject: org.example.tycho-example:plugin:1.0.0-SNAPSHOT @ /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin/pom.xml
+[INFO] Computing target platform for MavenProject: org.example.tycho-example:plugin.tests:1.0.0-SNAPSHOT @ /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin.tests/pom.xml
+[INFO] Resolving dependencies of MavenProject: org.example.tycho-example:plugin.tests:1.0.0-SNAPSHOT @ /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin.tests/pom.xml
+[INFO] Resolving class path of MavenProject: org.example.tycho-example:plugin.tests:1.0.0-SNAPSHOT @ /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin.tests/pom.xml
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Build Order:
 [INFO] 
-[INFO] JaCoCo Examples :: tycho-example :: parent
+[INFO] JaCoCo Examples :: tycho-example :: plugin.parent
 [INFO] JaCoCo Examples :: tycho-example :: plugin
 [INFO] JaCoCo Examples :: tycho-example :: plugin.tests
+[INFO] JaCoCo Examples :: tycho-example :: parent
 [INFO] 
 [INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
 [INFO]                                                                         
@@ -28,196 +37,210 @@
 [INFO] 
 [INFO] --- sonar-maven-plugin:2.4:sonar (default-cli) @ parent ---
 [INFO] SonarQube version: 4.4
-INFO: Default locale: "en_US", source code encoding: "UTF-8"
-INFO: Work directory: /home/bettini/git/sonar-examples/projects/tycho/target/sonar
+INFO: Default locale: "en_US", source code encoding: "UTF-8" (analysis is platform dependent)
+INFO: Work directory: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/target/sonar
 INFO: SonarQube Server 4.4
-[INFO] [08:12:35.864] Load global settings
-[INFO] [08:12:35.997] User cache: /home/bettini/.sonar/cache
-[INFO] [08:12:36.010] Install plugins
-[INFO] [08:12:36.102] Install JDBC driver
-[WARN] [08:12:36.106] H2 database should be used for evaluation purpose only
-[INFO] [08:12:36.106] Create JDBC datasource for jdbc:h2:tcp://localhost/sonar
-[INFO] [08:12:36.207] Initializing Hibernate
-[INFO] [08:12:38.847] Loading technical debt model...
-[INFO] [08:12:38.868] Loading technical debt model done: 21 ms
-[INFO] [08:12:38.870] Load project settings
-[INFO] [08:12:38.946] Apply project exclusions
-[WARN] [08:12:39.016] 'sonar.dynamicAnalysis' is deprecated since version 4.3 and should no longer be used.
-[WARN] [08:12:39.038] 'sonar.dynamicAnalysis' is deprecated since version 4.3 and should no longer be used.
-[WARN] [08:12:39.052] 'sonar.dynamicAnalysis' is deprecated since version 4.3 and should no longer be used.
-[INFO] [08:12:39.122] -------------  Scan JaCoCo Examples :: tycho-example :: plugin
-[INFO] [08:12:39.123] Load module settings
-[INFO] [08:12:40.183] Language is forced to java
-[INFO] [08:12:40.187] Loading rules...
-[INFO] [08:12:40.730] Loading rules done: 543 ms
-[INFO] [08:12:40.745] Configure Maven plugins
-[INFO] [08:12:40.855] Compare to previous analysis (2014-09-06)
-[INFO] [08:12:40.868] Compare over 30 days (2014-08-12, analysis of 2014-09-06 16:00:53.481)
-[INFO] [08:12:40.869] No quality gate is configured.
-[INFO] [08:12:40.988] Initializer FindbugsMavenInitializer...
-[INFO] [08:12:40.989] Initializer FindbugsMavenInitializer done: 1 ms
-[INFO] [08:12:40.989] Base dir: /home/bettini/git/sonar-examples/projects/tycho/plugin
-[INFO] [08:12:40.989] Working dir: /home/bettini/git/sonar-examples/projects/tycho/plugin/target/sonar
-[INFO] [08:12:40.989] Source dirs: /home/bettini/git/sonar-examples/projects/tycho/plugin/src
-[INFO] [08:12:40.989] Binary dirs: /home/bettini/git/sonar-examples/projects/tycho/plugin/target/classes
-[INFO] [08:12:40.989] Source encoding: UTF-8, default locale: en_US
-[INFO] [08:12:40.990] Index files
-[INFO] [08:12:41.072] 1 files indexed
-[INFO] [08:12:41.139] Quality profile for java: Sonar way with Findbugs
-[INFO] [08:12:41.146] Sensor JavaSquidSensor...
-[INFO] [08:12:41.193] Java Main Files AST scan...
-[INFO] [08:12:41.196] 1 source files to be analyzed
-[INFO] [08:12:41.261] 1/1 source files analyzed
-[INFO] [08:12:41.263] Java Main Files AST scan done: 70 ms
-[INFO] [08:12:41.264] Java bytecode scan...
-[INFO] [08:12:41.281] Java bytecode scan done: 17 ms
-[INFO] [08:12:41.281] Java Test Files AST scan...
-[INFO] [08:12:41.282] 0 source files to be analyzed
-[INFO] [08:12:41.282] Java Test Files AST scan done: 1 ms
-[INFO] [08:12:41.282] 0/0 source files analyzed
-[INFO] [08:12:41.286] Package design analysis...
-[INFO] [08:12:41.293] Package design analysis done: 7 ms
-[INFO] [08:12:41.321] Sensor JavaSquidSensor done: 175 ms
-[INFO] [08:12:41.321] Sensor QProfileSensor...
-[INFO] [08:12:41.323] Sensor QProfileSensor done: 2 ms
-[INFO] [08:12:41.323] Sensor FindbugsSensor...
-[INFO] [08:12:41.324] Execute Findbugs 2.0.3...
-[INFO] [08:12:42.346] Findbugs output report: /home/bettini/git/sonar-examples/projects/tycho/plugin/target/sonar/findbugs-result.xml
-[INFO] [08:12:43.792] Execute Findbugs 2.0.3 done: 2468 ms
-[INFO] [08:12:43.792] Sensor FindbugsSensor done: 2469 ms
-[INFO] [08:12:43.792] Sensor CpdSensor...
-[INFO] [08:12:43.793] SonarEngine is used for java
-[INFO] [08:12:43.793] Cross-project analysis disabled
-[INFO] [08:12:43.809] Sensor CpdSensor done: 17 ms
-[INFO] [08:12:43.809] Sensor InitialOpenIssuesSensor...
-[INFO] [08:12:43.908] Sensor InitialOpenIssuesSensor done: 99 ms
-[INFO] [08:12:43.908] Sensor ProjectLinksSensor...
-[INFO] [08:12:43.911] Sensor ProjectLinksSensor done: 3 ms
-[INFO] [08:12:43.912] Sensor VersionEventsSensor...
-[INFO] [08:12:43.922] Sensor VersionEventsSensor done: 10 ms
-[INFO] [08:12:43.922] Sensor FileHashSensor...
-[INFO] [08:12:43.923] Sensor FileHashSensor done: 1 ms
-[INFO] [08:12:43.923] Sensor SurefireSensor...
-[INFO] [08:12:43.923] parsing /home/bettini/git/sonar-examples/projects/tycho/plugin/target/surefire-reports
-[WARN] [08:12:43.923] Reports path not found: /home/bettini/git/sonar-examples/projects/tycho/plugin/target/surefire-reports
-[INFO] [08:12:43.923] Sensor SurefireSensor done: 0 ms
-[INFO] [08:12:43.923] Sensor Maven dependencies...
-[INFO] [08:12:43.928] Sensor Maven dependencies done: 5 ms
-[INFO] [08:12:43.928] Sensor JaCoCoSensor...
-[INFO] [08:12:43.930] Analysing /home/bettini/git/sonar-examples/projects/tycho/plugin/../target/jacoco.exec
-[INFO] [08:12:43.968] No information about coverage per test.
-[INFO] [08:12:43.968] Sensor JaCoCoSensor done: 40 ms
-[INFO] [08:12:44.834] Execute decorators...
-[INFO] [08:12:45.039] -------------  Scan JaCoCo Examples :: tycho-example :: plugin.tests
-[INFO] [08:12:45.040] Load module settings
-[INFO] [08:12:45.379] Language is forced to java
-[INFO] [08:12:45.385] Configure Maven plugins
-[INFO] [08:12:45.386] Compare to previous analysis (2014-09-06)
-[INFO] [08:12:45.387] Compare over 30 days (2014-08-12, analysis of 2014-09-06 16:00:53.481)
-[INFO] [08:12:45.388] No quality gate is configured.
-[INFO] [08:12:45.402] Initializer FindbugsMavenInitializer...
-[INFO] [08:12:45.402] Initializer FindbugsMavenInitializer done: 0 ms
-[INFO] [08:12:45.402] Base dir: /home/bettini/git/sonar-examples/projects/tycho/plugin.tests
-[INFO] [08:12:45.402] Working dir: /home/bettini/git/sonar-examples/projects/tycho/plugin.tests/target/sonar
-[INFO] [08:12:45.402] Test dirs: /home/bettini/git/sonar-examples/projects/tycho/plugin.tests/src
-[INFO] [08:12:45.402] Binary dirs: /home/bettini/git/sonar-examples/projects/tycho/plugin.tests/target/classes
-[INFO] [08:12:45.402] Source encoding: UTF-8, default locale: en_US
-[INFO] [08:12:45.402] Index files
-[INFO] [08:12:45.407] 1 files indexed
-[INFO] [08:12:45.418] Quality profile for java: Sonar way with Findbugs
-[INFO] [08:12:45.421] Sensor JavaSquidSensor...
-[INFO] [08:12:45.432] Java Main Files AST scan...
-[INFO] [08:12:45.433] 0 source files to be analyzed
-[INFO] [08:12:45.433] Java Main Files AST scan done: 1 ms
-[INFO] [08:12:45.434] 0/0 source files analyzed
-[INFO] [08:12:45.434] Java bytecode scan...
-[INFO] [08:12:45.435] Java bytecode scan done: 1 ms
-[INFO] [08:12:45.436] Java Test Files AST scan...
-[INFO] [08:12:45.436] 1 source files to be analyzed
-[INFO] [08:12:45.445] Java Test Files AST scan done: 9 ms
-[INFO] [08:12:45.445] 1/1 source files analyzed
-[INFO] [08:12:45.446] Package design analysis...
-[INFO] [08:12:45.447] Package design analysis done: 1 ms
-[INFO] [08:12:45.448] Sensor JavaSquidSensor done: 27 ms
-[INFO] [08:12:45.448] Sensor QProfileSensor...
-[INFO] [08:12:45.449] Sensor QProfileSensor done: 1 ms
-[INFO] [08:12:45.449] Sensor FindbugsSensor...
-[INFO] [08:12:45.449] Execute Findbugs 2.0.3...
-[INFO] [08:12:45.485] Findbugs output report: /home/bettini/git/sonar-examples/projects/tycho/plugin.tests/target/sonar/findbugs-result.xml
-[INFO] [08:12:46.042] Execute Findbugs 2.0.3 done: 593 ms
-[INFO] [08:12:46.042] Sensor FindbugsSensor done: 593 ms
-[INFO] [08:12:46.043] Sensor CpdSensor...
-[INFO] [08:12:46.043] SonarEngine is used for java
-[INFO] [08:12:46.043] Sensor CpdSensor done: 0 ms
-[INFO] [08:12:46.043] Sensor InitialOpenIssuesSensor...
-[INFO] [08:12:46.055] Sensor InitialOpenIssuesSensor done: 12 ms
-[INFO] [08:12:46.055] Sensor ProjectLinksSensor...
-[INFO] [08:12:46.057] Sensor ProjectLinksSensor done: 2 ms
-[INFO] [08:12:46.057] Sensor VersionEventsSensor...
-[INFO] [08:12:46.060] Sensor VersionEventsSensor done: 3 ms
-[INFO] [08:12:46.060] Sensor FileHashSensor...
-[INFO] [08:12:46.061] Sensor FileHashSensor done: 1 ms
-[INFO] [08:12:46.061] Sensor SurefireSensor...
-[INFO] [08:12:46.061] parsing /home/bettini/git/sonar-examples/projects/tycho/plugin.tests/target/surefire-reports
-[INFO] [08:12:46.191] Sensor SurefireSensor done: 130 ms
-[INFO] [08:12:46.191] Sensor Maven dependencies...
-[INFO] [08:12:46.301] Sensor Maven dependencies done: 110 ms
-[INFO] [08:12:46.302] Sensor JaCoCoSensor...
-[INFO] [08:12:46.302] Analysing /home/bettini/git/sonar-examples/projects/tycho/plugin.tests/../target/jacoco.exec
-[WARN] [08:12:46.303] Coverage information was not collected. Perhaps you forget to include debug information into compiled classes?
-[INFO] [08:12:46.303] Sensor JaCoCoSensor done: 1 ms
-[INFO] [08:12:46.453] Execute decorators...
-[INFO] [08:12:46.524] -------------  Scan JaCoCo Examples :: tycho-example :: parent
-[INFO] [08:12:46.525] Load module settings
-[INFO] [08:12:46.801] Language is forced to java
-[INFO] [08:12:46.807] Configure Maven plugins
-[INFO] [08:12:46.809] Compare to previous analysis (2014-09-06)
-[INFO] [08:12:46.810] Compare over 30 days (2014-08-12, analysis of 2014-09-06 16:00:53.481)
-[INFO] [08:12:46.810] No quality gate is configured.
-[INFO] [08:12:46.821] Initializer FindbugsMavenInitializer...
-[INFO] [08:12:46.822] Initializer FindbugsMavenInitializer done: 1 ms
-[INFO] [08:12:46.822] Base dir: /home/bettini/git/sonar-examples/projects/tycho
-[INFO] [08:12:46.822] Working dir: /home/bettini/git/sonar-examples/projects/tycho/target/sonar
-[INFO] [08:12:46.822] Source encoding: UTF-8, default locale: en_US
-[INFO] [08:12:46.822] Quality profile for java: Sonar way with Findbugs
-[INFO] [08:12:46.824] Sensor CpdSensor...
-[INFO] [08:12:46.824] SonarEngine is used for java
-[INFO] [08:12:46.824] Sensor CpdSensor done: 0 ms
-[INFO] [08:12:46.824] Sensor InitialOpenIssuesSensor...
-[INFO] [08:12:46.833] Sensor InitialOpenIssuesSensor done: 9 ms
-[INFO] [08:12:46.833] Sensor ProjectLinksSensor...
-[INFO] [08:12:46.835] Sensor ProjectLinksSensor done: 2 ms
-[INFO] [08:12:46.836] Sensor VersionEventsSensor...
-[INFO] [08:12:46.839] Sensor VersionEventsSensor done: 3 ms
-[INFO] [08:12:46.839] Sensor FileHashSensor...
-[INFO] [08:12:46.839] Sensor FileHashSensor done: 0 ms
-[INFO] [08:12:46.839] Sensor Maven dependencies...
-[INFO] [08:12:46.839] Sensor Maven dependencies done: 0 ms
-[INFO] [08:12:46.901] Execute decorators...
-[INFO] [08:12:46.970] Store results in database
-[INFO] [08:12:47.240] ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/org.example.tycho-example:parent
-[INFO] [08:12:47.277] Executing post-job class org.sonar.plugins.core.issue.notification.SendIssueNotificationsPostJob
-[INFO] [08:12:47.283] Executing post-job class org.sonar.plugins.core.batch.IndexProjectPostJob
-[INFO] [08:12:47.373] Executing post-job class org.sonar.plugins.dbcleaner.ProjectPurgePostJob
-[INFO] [08:12:47.383] -> Keep one snapshot per day between 2014-08-14 and 2014-09-10
-[INFO] [08:12:47.384] <- Delete snapshot: 2014-09-06T16:02:58+0200 [2096]
-[INFO] [08:12:47.417] <- Delete snapshot: 2014-09-06T16:15:16+0200 [2106]
-[INFO] [08:12:47.452] -> Keep one snapshot per week between 2013-09-12 and 2014-08-14
-[INFO] [08:12:47.453] -> Keep one snapshot per month between 2009-09-17 and 2013-09-12
-[INFO] [08:12:47.453] -> Delete data prior to: 2009-09-17
-[INFO] [08:12:47.457] -> Clean JaCoCo Examples :: tycho-example :: parent [id=725]
-[INFO] [08:12:47.459] -> Clean JaCoCo Examples :: tycho-example :: plugin [id=726]
-[INFO] [08:12:47.462] -> Clean JaCoCo Examples :: tycho-example :: plugin.tests [id=729]
+[INFO] [16:23:00.621] Load global settings
+[INFO] [16:23:00.689] User cache: /home/bettini/.sonar/cache
+[INFO] [16:23:00.695] Install plugins
+[INFO] [16:23:00.714] Install JDBC driver
+[WARN] [16:23:00.717] H2 database should be used for evaluation purpose only
+[INFO] [16:23:00.717] Create JDBC datasource for jdbc:h2:tcp://localhost/sonar
+[INFO] [16:23:00.768] Initializing Hibernate
+[INFO] [16:23:02.792] Loading technical debt model...
+[INFO] [16:23:02.805] Loading technical debt model done: 13 ms
+[INFO] [16:23:02.807] Load project settings
+[INFO] [16:23:02.832] Apply project exclusions
+[INFO] [16:23:02.971] -------------  Scan JaCoCo Examples :: tycho-example :: plugin
+[INFO] [16:23:02.973] Load module settings
+[INFO] [16:23:03.987] Language is forced to java
+[INFO] [16:23:03.990] Loading rules...
+[INFO] [16:23:04.490] Loading rules done: 500 ms
+[INFO] [16:23:04.504] Configure Maven plugins
+[INFO] [16:23:04.607] Compare to previous analysis (2014-10-02)
+[INFO] [16:23:04.621] Compare over 30 days (2014-09-02, analysis of 2014-09-13 09:34:26.2)
+[INFO] [16:23:04.622] No quality gate is configured.
+[INFO] [16:23:04.732] Initializer FindbugsMavenInitializer...
+[INFO] [16:23:04.733] Initializer FindbugsMavenInitializer done: 1 ms
+[INFO] [16:23:04.734] Base dir: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin
+[INFO] [16:23:04.734] Working dir: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin/target/sonar
+[INFO] [16:23:04.734] Source dirs: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin/src, /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin/xtend-gen
+[INFO] [16:23:04.734] Binary dirs: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin/target/classes
+[INFO] [16:23:04.734] Source encoding: UTF-8, default locale: en_US
+[INFO] [16:23:04.734] Index files
+[INFO] [16:23:04.774] 2 files indexed
+[INFO] [16:23:04.821] Quality profile for java: Sonar way with Findbugs
+[INFO] [16:23:04.830] Sensor JavaSquidSensor...
+[INFO] [16:23:04.871] Java Main Files AST scan...
+[INFO] [16:23:04.875] 2 source files to be analyzed
+[INFO] [16:23:04.977] 2/2 source files analyzed
+[INFO] [16:23:04.979] Java Main Files AST scan done: 108 ms
+[INFO] [16:23:04.980] Java bytecode scan...
+[INFO] [16:23:04.999] Java bytecode scan done: 19 ms
+[INFO] [16:23:04.999] Java Test Files AST scan...
+[INFO] [16:23:04.999] 0 source files to be analyzed
+[INFO] [16:23:04.999] Java Test Files AST scan done: 0 ms
+[INFO] [16:23:04.999] 0/0 source files analyzed
+[INFO] [16:23:05.004] Package design analysis...
+[INFO] [16:23:05.008] Package design analysis done: 5 ms
+[INFO] [16:23:05.031] Sensor JavaSquidSensor done: 201 ms
+[INFO] [16:23:05.031] Sensor QProfileSensor...
+[INFO] [16:23:05.034] Sensor QProfileSensor done: 3 ms
+[INFO] [16:23:05.034] Sensor FindbugsSensor...
+[INFO] [16:23:05.035] Execute Findbugs 3.0.0...
+[INFO] [16:23:05.942] Findbugs output report: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin/target/sonar/findbugs-result.xml
+[INFO] [16:23:07.564] Execute Findbugs 3.0.0 done: 2529 ms
+[INFO] [16:23:07.568] Sensor FindbugsSensor done: 2534 ms
+[INFO] [16:23:07.568] Sensor CpdSensor...
+[INFO] [16:23:07.568] SonarEngine is used for java
+[INFO] [16:23:07.569] Cross-project analysis disabled
+[INFO] [16:23:07.583] Sensor CpdSensor done: 15 ms
+[INFO] [16:23:07.584] Sensor InitialOpenIssuesSensor...
+[INFO] [16:23:07.598] Sensor InitialOpenIssuesSensor done: 14 ms
+[INFO] [16:23:07.598] Sensor ProjectLinksSensor...
+[INFO] [16:23:07.601] Sensor ProjectLinksSensor done: 3 ms
+[INFO] [16:23:07.602] Sensor VersionEventsSensor...
+[INFO] [16:23:07.612] Sensor VersionEventsSensor done: 10 ms
+[INFO] [16:23:07.612] Sensor FileHashSensor...
+[INFO] [16:23:07.613] Sensor FileHashSensor done: 1 ms
+[INFO] [16:23:07.613] Sensor SurefireSensor...
+[INFO] [16:23:07.613] parsing /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin/target/surefire-reports
+[WARN] [16:23:07.613] Reports path not found: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin/target/surefire-reports
+[INFO] [16:23:07.613] Sensor SurefireSensor done: 0 ms
+[INFO] [16:23:07.613] Sensor Maven dependencies...
+[INFO] [16:23:07.643] Sensor Maven dependencies done: 30 ms
+[INFO] [16:23:08.618] Execute decorators...
+[INFO] [16:23:08.845] -------------  Scan JaCoCo Examples :: tycho-example :: plugin.tests
+[INFO] [16:23:08.846] Load module settings
+[INFO] [16:23:09.154] Language is forced to java
+[INFO] [16:23:09.160] Configure Maven plugins
+[INFO] [16:23:09.162] Compare to previous analysis (2014-10-02)
+[INFO] [16:23:09.162] Compare over 30 days (2014-09-02, analysis of 2014-09-13 09:34:26.2)
+[INFO] [16:23:09.163] No quality gate is configured.
+[INFO] [16:23:09.181] Initializer FindbugsMavenInitializer...
+[INFO] [16:23:09.181] Initializer FindbugsMavenInitializer done: 0 ms
+[INFO] [16:23:09.181] Base dir: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin.tests
+[INFO] [16:23:09.181] Working dir: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin.tests/target/sonar
+[INFO] [16:23:09.181] Test dirs: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin.tests/src, /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin.tests/xtend-gen
+[INFO] [16:23:09.181] Binary dirs: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin.tests/target/classes
+[INFO] [16:23:09.181] Source encoding: UTF-8, default locale: en_US
+[INFO] [16:23:09.181] Index files
+[INFO] [16:23:09.187] 2 files indexed
+[INFO] [16:23:09.200] Quality profile for java: Sonar way with Findbugs
+[INFO] [16:23:09.205] Sensor JavaSquidSensor...
+[INFO] [16:23:09.215] Java Main Files AST scan...
+[INFO] [16:23:09.216] 0 source files to be analyzed
+[INFO] [16:23:09.216] Java Main Files AST scan done: 1 ms
+[INFO] [16:23:09.216] 0/0 source files analyzed
+[INFO] [16:23:09.216] Java bytecode scan...
+[INFO] [16:23:09.217] Java bytecode scan done: 1 ms
+[INFO] [16:23:09.217] Java Test Files AST scan...
+[INFO] [16:23:09.217] 2 source files to be analyzed
+[INFO] [16:23:09.235] Java Test Files AST scan done: 18 ms
+[INFO] [16:23:09.235] 2/2 source files analyzed
+[INFO] [16:23:09.236] Package design analysis...
+[INFO] [16:23:09.237] Package design analysis done: 1 ms
+[INFO] [16:23:09.237] Sensor JavaSquidSensor done: 32 ms
+[INFO] [16:23:09.238] Sensor QProfileSensor...
+[INFO] [16:23:09.238] Sensor QProfileSensor done: 0 ms
+[INFO] [16:23:09.238] Sensor FindbugsSensor...
+[INFO] [16:23:09.238] Execute Findbugs 3.0.0...
+[INFO] [16:23:09.262] Findbugs output report: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin.tests/target/sonar/findbugs-result.xml
+[INFO] [16:23:09.830] Execute Findbugs 3.0.0 done: 592 ms
+[INFO] [16:23:09.833] Sensor FindbugsSensor done: 594 ms
+[INFO] [16:23:09.833] Sensor CpdSensor...
+[INFO] [16:23:09.833] SonarEngine is used for java
+[INFO] [16:23:09.833] Sensor CpdSensor done: 0 ms
+[INFO] [16:23:09.833] Sensor InitialOpenIssuesSensor...
+[INFO] [16:23:09.841] Sensor InitialOpenIssuesSensor done: 8 ms
+[INFO] [16:23:09.841] Sensor ProjectLinksSensor...
+[INFO] [16:23:09.842] Sensor ProjectLinksSensor done: 1 ms
+[INFO] [16:23:09.843] Sensor VersionEventsSensor...
+[INFO] [16:23:09.845] Sensor VersionEventsSensor done: 2 ms
+[INFO] [16:23:09.846] Sensor FileHashSensor...
+[INFO] [16:23:09.846] Sensor FileHashSensor done: 0 ms
+[INFO] [16:23:09.846] Sensor SurefireSensor...
+[INFO] [16:23:09.846] parsing /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin.tests/target/surefire-reports
+[INFO] [16:23:09.914] Sensor SurefireSensor done: 68 ms
+[INFO] [16:23:09.914] Sensor Maven dependencies...
+[INFO] [16:23:09.929] Sensor Maven dependencies done: 15 ms
+[INFO] [16:23:10.167] Execute decorators...
+[INFO] [16:23:10.255] -------------  Scan JaCoCo Examples :: tycho-example :: plugin.parent
+[INFO] [16:23:10.256] Load module settings
+[INFO] [16:23:10.536] Language is forced to java
+[INFO] [16:23:10.543] Configure Maven plugins
+[INFO] [16:23:10.544] Compare to previous analysis (2014-10-02)
+[INFO] [16:23:10.545] Compare over 30 days (2014-09-02, analysis of 2014-09-13 09:34:26.2)
+[INFO] [16:23:10.546] No quality gate is configured.
+[INFO] [16:23:10.560] Initializer FindbugsMavenInitializer...
+[INFO] [16:23:10.560] Initializer FindbugsMavenInitializer done: 0 ms
+[INFO] [16:23:10.560] Base dir: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin.parent
+[INFO] [16:23:10.560] Working dir: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/plugin.parent/target/sonar
+[INFO] [16:23:10.560] Source encoding: UTF-8, default locale: en_US
+[INFO] [16:23:10.560] Quality profile for java: Sonar way with Findbugs
+[INFO] [16:23:10.563] Sensor CpdSensor...
+[INFO] [16:23:10.563] SonarEngine is used for java
+[INFO] [16:23:10.563] Sensor CpdSensor done: 1 ms
+[INFO] [16:23:10.563] Sensor InitialOpenIssuesSensor...
+[INFO] [16:23:10.570] Sensor InitialOpenIssuesSensor done: 7 ms
+[INFO] [16:23:10.570] Sensor ProjectLinksSensor...
+[INFO] [16:23:10.572] Sensor ProjectLinksSensor done: 2 ms
+[INFO] [16:23:10.573] Sensor VersionEventsSensor...
+[INFO] [16:23:10.576] Sensor VersionEventsSensor done: 3 ms
+[INFO] [16:23:10.576] Sensor FileHashSensor...
+[INFO] [16:23:10.576] Sensor FileHashSensor done: 0 ms
+[INFO] [16:23:10.577] Sensor Maven dependencies...
+[INFO] [16:23:10.577] Sensor Maven dependencies done: 0 ms
+[INFO] [16:23:10.670] Execute decorators...
+[INFO] [16:23:10.743] -------------  Scan JaCoCo Examples :: tycho-example :: parent
+[INFO] [16:23:10.744] Load module settings
+[INFO] [16:23:11.021] Configure Maven plugins
+[INFO] [16:23:11.022] Compare to previous analysis (2014-10-02)
+[INFO] [16:23:11.023] Compare over 30 days (2014-09-02, analysis of 2014-09-13 09:34:26.2)
+[INFO] [16:23:11.023] No quality gate is configured.
+[INFO] [16:23:11.032] Initializer FindbugsMavenInitializer...
+[INFO] [16:23:11.032] Initializer FindbugsMavenInitializer done: 0 ms
+[INFO] [16:23:11.032] Base dir: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar
+[INFO] [16:23:11.032] Working dir: /home/bettini/work/eclipse/sonarqube/tycho-xtend-sonar/target/sonar
+[INFO] [16:23:11.032] Source encoding: UTF-8, default locale: en_US
+[INFO] [16:23:11.034] Sensor CpdSensor...
+[INFO] [16:23:11.034] Sensor CpdSensor done: 0 ms
+[INFO] [16:23:11.034] Sensor InitialOpenIssuesSensor...
+[INFO] [16:23:11.040] Sensor InitialOpenIssuesSensor done: 6 ms
+[INFO] [16:23:11.041] Sensor ProjectLinksSensor...
+[INFO] [16:23:11.042] Sensor ProjectLinksSensor done: 1 ms
+[INFO] [16:23:11.043] Sensor VersionEventsSensor...
+[INFO] [16:23:11.045] Sensor VersionEventsSensor done: 2 ms
+[INFO] [16:23:11.045] Sensor FileHashSensor...
+[INFO] [16:23:11.045] Sensor FileHashSensor done: 0 ms
+[INFO] [16:23:11.045] Sensor Maven dependencies...
+[INFO] [16:23:11.045] Sensor Maven dependencies done: 0 ms
+[INFO] [16:23:11.120] Execute decorators...
+[INFO] [16:23:11.187] Store results in database
+[INFO] [16:23:11.578] ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/org.example.tycho-example:parent
+[INFO] [16:23:11.608] Executing post-job class org.sonar.plugins.core.issue.notification.SendIssueNotificationsPostJob
+[INFO] [16:23:11.610] Executing post-job class org.sonar.plugins.core.batch.IndexProjectPostJob
+[INFO] [16:23:11.645] Executing post-job class org.sonar.plugins.dbcleaner.ProjectPurgePostJob
+[INFO] [16:23:11.654] -> Keep one snapshot per day between 2014-09-04 and 2014-10-01
+[INFO] [16:23:11.655] -> Keep one snapshot per week between 2013-10-03 and 2014-09-04
+[INFO] [16:23:11.655] -> Keep one snapshot per month between 2009-10-08 and 2013-10-03
+[INFO] [16:23:11.655] -> Delete data prior to: 2009-10-08
+[INFO] [16:23:11.659] -> Clean JaCoCo Examples :: tycho-example :: parent [id=1143]
+[INFO] [16:23:11.662] <- Clean snapshot 17152
+[INFO] [16:23:11.780] -> Clean JaCoCo Examples :: tycho-example :: plugin [id=1144]
+[INFO] [16:23:11.782] -> Clean JaCoCo Examples :: tycho-example :: plugin.tests [id=1145]
+[INFO] [16:23:11.783] -> Clean JaCoCo Examples :: tycho-example :: plugin.parent [id=1158]
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] JaCoCo Examples :: tycho-example :: parent ........ SUCCESS [ 12.697 s]
+[INFO] JaCoCo Examples :: tycho-example :: plugin.parent . SKIPPED
 [INFO] JaCoCo Examples :: tycho-example :: plugin ........ SKIPPED
 [INFO] JaCoCo Examples :: tycho-example :: plugin.tests .. SKIPPED
+[INFO] JaCoCo Examples :: tycho-example :: parent ........ SUCCESS [ 11.700 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 26.364 s
-[INFO] Finished at: 2014-09-11T08:12:47+01:00
-[INFO] Final Memory: 94M/1248M
+[INFO] Total time: 01:40 min
+[INFO] Finished at: 2014-10-02T16:23:11+01:00
+[INFO] Final Memory: 94M/342M
 [INFO] ------------------------------------------------------------------------
